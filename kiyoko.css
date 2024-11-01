@@ -1,0 +1,72 @@
+
+:root{
+    --primary-color: #fafafa;
+    --secondary-color: #2d2de4;
+}
+html{
+    font: normal 400 62.5% 'Inter Tight', sans-serif;
+    background-image: linear-gradient(to right, transparent, rgb(49, 49, 223));
+    width:100%;
+    margin: auto;
+    line-height: 1.5;
+}
+body{
+    padding: 6rem;
+}
+
+h2{
+    font-size: 2.4rem;
+    text-transform: uppercase;
+    color: var(--secondary-color);
+}
+h3{
+    font-size: 2.2rem;
+    color: var(--secondary-color);
+}
+
+h4{
+    font-size: 1.8rem;
+    color: var(--secondary-color);
+}
+p,a, ul, li{
+    font-size: 1.6rem;
+}
+
+h1{
+    color:rgba(81, 81, 240, 0.8);
+    text-align: center;
+    text-shadow: 3px 3px 3px rgb(41, 40, 40);
+    font-size: 4.6rem;
+}
+
+address{
+    font-size: 1.4rem;
+    font-style: normal;
+    text-align: right;
+    color: var(--primary-color);
+    line-height: 1.4;
+    padding: 1.8rem;
+}
+
+.social-media a{
+    color: var(--primary-color);
+    text-decoration: none;
+    background-color: rgba(92, 9, 169, 0.888);
+    padding: 1rem;
+    border-radius: .5rem;
+    margin-left: .4rem;
+    transition: background-color .5s ease;
+}
+
+.social-media a:hover{
+    background-color: rgba(4, 4, 188, 0.759);
+}
+
+.item li{
+    list-style-type: square;
+}
+
+
+.item-profile__experience em{
+    text-decoration: underline;
+}
