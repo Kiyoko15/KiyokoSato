@@ -70,3 +70,7 @@ address{
 .item-profile__experience em{
     text-decoration: underline;
 }
+.item-profile ul{
+    padding-left: 0;
+    list-style-position: inside;
+}
