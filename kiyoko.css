@@ -1,11 +1,18 @@
+@import url(normalize.css);
+
+body{
+    padding: 2em;
+}
+
 
 :root{
-    --primary-color: #fafafa;
+    --primary-color: rgb(12, 12, 12);
     --secondary-color: #2d2de4;
+    --mixWhite:white;
 }
 html{
     font: normal 400 62.5% 'Inter Tight', sans-serif;
-    background-image: linear-gradient(to right, transparent, rgb(49, 49, 223));
+    background-image: linear-gradient(to right, transparent, rgb(123, 19, 208));
     width:100%;
     margin: auto;
     line-height: 1.5;
@@ -19,17 +26,15 @@ h2{
     text-transform: uppercase;
     color: var(--secondary-color);
 }
-h3{
-    font-size: 2.2rem;
-    color: var(--secondary-color);
-}
 
-h4{
-    font-size: 1.8rem;
-    color: var(--secondary-color);
-}
+
 p,a, ul, li{
     font-size: 1.6rem;
+}
+
+.summary p{
+    line-height: 1.5;
+    text-indent: 1em;
 }
 
 h1{
@@ -42,35 +47,40 @@ h1{
 address{
     font-size: 1.4rem;
     font-style: normal;
-    text-align: right;
     color: var(--primary-color);
-    line-height: 1.4;
-    padding: 1.8rem;
 }
 
-.social-media a{
-    color: var(--primary-color);
+a{
+    color: var(--mixWhite);
     text-decoration: none;
     background-color: rgba(92, 9, 169, 0.888);
     padding: 1rem;
     border-radius: .5rem;
-    margin-left: .4rem;
-    transition: background-color .5s ease;
+    display: flexbox;
+    justify-content:right;
+
 }
 
-.social-media a:hover{
+a:hover{
     background-color: rgba(4, 4, 188, 0.759);
+
+}
+.container_header{
+    display: flex;
+    justify-content: end;
+    gap: 1em;
 }
 
-.item li{
+.skill_list li, .education_list li, .aditionalInformation_list li{
     list-style-type: square;
+    padding-left: 0;
+   
 }
-
-
-.item-profile__experience em{
-    text-decoration: underline;
-}
-.item-profile ul{
+.education_list, .aditionalInformation_list, .skill_list{
     padding-left: 0;
     list-style-position: inside;
 }
+.education_list__inside li{
+    list-style-type:circle;
+}
+
